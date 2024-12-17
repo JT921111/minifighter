@@ -1,0 +1,154 @@
+{
+  "characters": [
+    {
+      "name": "Ryu Red",
+      "img": "001",
+      "attack": 5,
+      "agility": 5,
+      "energy": 50,
+      "damage": 30,
+      "charge": 1.2,
+      "dodgeRate": 0.7
+    }, 
+    {
+      "name": "Ryu Blue",
+      "img": "002",
+      "attack": 6,
+      "agility": 3.6,
+      "energy": 36,
+      "damage": 18,
+      "charge": 2.8,
+      "dodgeRate": 0.84
+    }, 
+    {
+      "name": "Ryu Orange",
+      "img": "003",
+      "attack": 2,
+      "agility": 8,
+      "energy": 80,
+      "damage": 80,
+      "charge": 1.2,
+      "dodgeRate": 0.6
+    }, 
+    {
+      "name": "Ryu Green",
+      "img": "004",
+      "attack": 4,
+      "agility": 3.6,
+      "energy": 45,
+      "damage": 40,
+      "charge": 2,
+      "dodgeRate": 0.84
+    }, 
+    {
+      "name": "Ryu Brown",
+      "img": "005",
+      "attack": 3,
+      "agility": 6,
+      "energy": 60,
+      "damage": 65,
+      "charge": 1.5,
+      "dodgeRate": 0.4
+    },
+    {
+      "name": "Ryu Red",
+      "img": "001",
+      "attack": 5,
+      "agility": 5,
+      "energy": 50,
+      "damage": 30,
+      "charge": 1.2,
+      "dodgeRate": 0.7
+    }, 
+    {
+      "name": "Ryu Blue",
+      "img": "002",
+      "attack": 6,
+      "agility": 3.6,
+      "energy": 36,
+      "damage": 18,
+      "charge": 2.8,
+      "dodgeRate": 0.84
+    }, 
+    {
+      "name": "Ryu Orange",
+      "img": "003",
+      "attack": 2,
+      "agility": 8,
+      "energy": 80,
+      "damage": 80,
+      "charge": 1.2,
+      "dodgeRate": 0.6
+    }, 
+    {
+      "name": "Ryu Green",
+      "img": "004",
+      "attack": 4,
+      "agility": 3.6,
+      "energy": 45,
+      "damage": 40,
+      "charge": 2,
+      "dodgeRate": 0.84
+    }, 
+    {
+      "name": "Ryu Brown",
+      "img": "005",
+      "attack": 3,
+      "agility": 6,
+      "energy": 60,
+      "damage": 65,
+      "charge": 1.5,
+      "dodgeRate": 0.4
+    },
+    {
+      "name": "Ryu Red",
+      "img": "001",
+      "attack": 5,
+      "agility": 5,
+      "energy": 50,
+      "damage": 30,
+      "charge": 1.2,
+      "dodgeRate": 0.7
+    }, 
+    {
+      "name": "Ryu Blue",
+      "img": "002",
+      "attack": 6,
+      "agility": 3.6,
+      "energy": 36,
+      "damage": 18,
+      "charge": 2.8,
+      "dodgeRate": 0.84
+    }, 
+    {
+      "name": "Ryu Orange",
+      "img": "003",
+      "attack": 2,
+      "agility": 8,
+      "energy": 80,
+      "damage": 80,
+      "charge": 1.2,
+      "dodgeRate": 0.6
+    }, 
+    {
+      "name": "Ryu Green",
+      "img": "004",
+      "attack": 4,
+      "agility": 3.6,
+      "energy": 45,
+      "damage": 40,
+      "charge": 2,
+      "dodgeRate": 0.84
+    }, 
+    {
+      "name": "Ryu Brown",
+      "img": "005",
+      "attack": 3,
+      "agility": 6,
+      "energy": 60,
+      "damage": 65,
+      "charge": 1.5,
+      "dodgeRate": 0.4
+    }
+  ]
+}
