@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(227, 80%, 90%);
+}
+
+.now {
+    display: none !important;
+}
+
+.homepage {
+    width: 100%;
+    height: 100%;
+}
+
+.backgroundimage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gametitle {
+    position: fixed;
+    translate: -50% 0;
+    left: 50vw;
+    top: 12vh;
+    width: 80vw;
+    height: 12vw;
+    font-size: 10vw;
+    line-height: 12vw;
+    text-align: center;
+    font-weight: 1000;
+    color: white;
+    text-shadow: rgb(250, 0, 0) 0.3vw 0.3vw, rgb(60, 0, 255) -0.3vw 0.3vw;
+}
+
+.startbutton {
+    position: fixed;
+    translate: -50% 0;
+    left: 50vw;
+    width: 20vw;
+    height: 6vw;
+    font-size: 4vw;
+    line-height: 6vw;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: white 0.1vw 0.1vw;
+    background-color: hsl(200, 99%, 60%);
+    border-radius: 0.4vw;
+}
+
+.pvp {
+    bottom: 40vh;
+}
+
+.pve {
+    bottom: 20vh;
+}
+
+.startbutton:hover {
+    animation: close 0.2s cubic-bezier(0.35, 0.25, 0.84, 0.3);
+    box-shadow: inset 0 -7vw 0 0 hsl(209, 100%, 84%);  
+}
+
+.startbutton:active {
+  animation: pulse 1s forwards;
+  box-shadow: inset 0 -7vw 0 0 hsl(209, 100%, 84%), 0 0 0 8vw transparent;
+}
+
+.charlistimage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+.charlistimage::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.charpage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 10vh 10vw;
+    width: 80vw;
+    height: 80vh;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.charlist {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 7vw;
+    width: 94%;
+    height: 94%;
+    background-color:hsla(0, 0%, 100%, 0.797);
+    border-radius: 0.5vw;
+    overflow-y: scroll;
+}
+
+.charlist::-webkit-scrollbar {
+    width: 12px;
+}
+
+.charlist::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.charlist::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 6px;
+}  
+
+.charactertile {
+    margin: 5% auto;
+    width: min(6vw, 90%);
+    height: min(6vw, 90%);
+    background-color: rgba(235, 235, 235, 0.713);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 160%;
+    border-radius: 0.3vw;
+}
+
+.charactertile:hover {
+    box-shadow: inset 0 0 5px 3px white;
+}
+
+.charpreview {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+.charimg {
+    margin: 2% auto;
+    width: 45%;
+    height: 96%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.charattr {
+    font-family: sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 2.1vw;
+}
+
+.charstart {
+    position: fixed;
+    translate: -50% 0;
+    bottom: 3.4vw;
+    width: 12vw;
+    height: 4vw;
+    font-size: 2vw;
+    line-height: 4vw;
+    text-align: center;
+    font-weight: 600;
+    background-color: rgb(136, 215, 189);
+    border-radius: 0.4vw;
+}
+
+.charstart:hover {
+    box-shadow: inset 0 0 3px 3px white;
+}
+
+.charstart:active {
+    box-shadow: inset 0 0 5px 3px rgba(246, 240, 240, 0.853);
+    font-size: 1.8vw;
+}
+
+.gamepage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 8fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.gameplaybackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/game_bg_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gamescreen {
+    position: relative;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+.healthbar {
+    display: flex;
+    grid-row: 1 / 2;
+    margin: 2vh auto 1vh;
+    width: 40vw;
+    height: 5vh;
+    background-color: gray;
+    z-index: 20;
+}
+
+.healthbar1 {
+    justify-content: right;
+    margin-left: 8vw;
+    grid-column: 1 / 2;
+}
+
+.healthbar2 {
+    justify-content: left;
+    margin-right: 8vw;
+    grid-column: 2 / 3;
+}
+
+.healthtemp {
+    display: flex;
+    margin: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color: rgb(255, 255, 255);
+}
+
+.healthtemp1 {
+    justify-content: right;
+}
+
+.healthtemp2 {
+    justify-content: left;
+}
+
+.health {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+
+.energy {
+    display: flex;
+    position: fixed;
+    top: 7vh;
+    width: 12vw;
+    height: 4vh;
+    background-color: gray;
+}
+
+.energy1 {
+    justify-content: right;
+}
+
+.energy2 {
+    justify-content: left;
+}
+
+.energyoutline {
+    position: fixed;
+    top: 7vh;
+    width: 0;
+    height: 0;
+    border-top-width: 4vh;
+    border-left-width: 5vh;
+    border-right-width: 5vh;
+    border-bottom-width: 0;
+    border-top-color: gray;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-style: solid;
+}
+
+.energyoutline1 {
+    margin-right: calc(12vw - 5vh);
+}
+
+.energyoutline2 {
+    margin-left: calc(12vw - 5vh);
+}
+
+.energybar {
+    display: flex;
+    margin: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color: rgb(67, 102, 215);
+}
+
+.player {
+    position: absolute;
+    translate: -50%;
+    bottom: 0;
+    width: 5vw;
+    height: 15vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
+}
+
+.player1 {
+    transform: rotateY(0deg);
+    left: 10vw;
+}
+
+.player2 {
+    transform: rotateY(180deg);
+    left: 90vw;
+}
+
+.player::before {
+    display: block;
+    position: relative;
+    translate: -50%;
+    top: -5vh;
+    left: 50%;
+    width: 8vh;
+    height: 5vh;
+    background-color: white;
+    color: black;
+    font-size: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    font-weight: 1000;
+    z-index: 50;
+}
+
+.player1::before {
+    content: "P1";
+    transform: rotateY(0deg);
+}
+
+.player2::before {
+    content: "P2";
+    transform: rotateY(180deg);
+}
+
+.gameplayground {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/ground_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 5;
+}
+
+.endpage {
+    width: 100%;
+    height: 100%;
+}
+
+.endpagebackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/game_bg_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.winnertext {
+    position: fixed;
+    translate: -50% 0;
+    left: 50vw;
+    top: 24vh;
+    width: 80vw;
+    height: 12vw;
+    font-size: 10vw;
+    line-height: 12vw;
+    text-align: center;
+    font-weight: 1000;
+    color: white;
+}
+
+.replaybutton {
+    position: fixed;
+    translate: -50% 0;
+    left: 50vw;
+    top: 60vh;
+    width: 20vw;
+    height: 6vw;
+    font-size: 4vw;
+    line-height: 6vw;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: rgb(126, 126, 126) 0.2vw 0.2vw 0.3vw;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.4vw;
+    box-shadow: inset -3px -3px 8px 1px rgba(127, 127, 127, 0.853);
+}
+
+.replaybutton:active {
+    box-shadow: inset -3px -3px 8px 1px rgba(235, 235, 235, 0.853);
+    background-color: hsl(0, 0%, 85%);
+}
+
+@keyframes close {
+    0% {
+        box-shadow: inset 0 0 0 0 hsl(209, 100%, 84%), inset 0 0 0 0 hsl(209, 100%, 84%);  
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: inset 0 -7vw 0 0 hsl(209, 100%, 84%), 0 0 0 0 hsla(218, 81%, 71%, 0.925);
+    }
+}
